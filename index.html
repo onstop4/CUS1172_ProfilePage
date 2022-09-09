@@ -53,7 +53,7 @@
                 <td><a href="#photo-i-took">Photo I Took</a></td>
             </tr>
             <tr>
-                <td><a href="#search-bar">Search Bar</a></td>
+                <td><a href="#contact-form">Contact Form</a></td>
             </tr>
         </table>
     </div>
@@ -112,7 +112,7 @@
             Isolated and <a target="_blank" href="https://youtu.be/kBNh9rtJJ6c">Nevergreen</a> by Emancipator.</p>
 
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tofr5iyM9dM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        <br>
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kBNh9rtJJ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <p><strong>Favorite Movie</strong>: <a target="_blank" href="https://youtu.be/mqqft2x_Aa4">The Batman</a></p>
@@ -166,11 +166,18 @@
     </div>
 
     <div>
-        <h2><a id="search-bar">Search Bar</a></h2>
-        <p>Sorry, but this search bar doesn't do anything at the moment.</p>
+        <h2><a id="contact-form">Contact Form</a></h2>
+        <p>You can contact me using the form below. Your message must be at least ten characters.</p>
         <form>
-            <label for="search-query">Search query</label>
-            <input type="text" name="search-query" placeholder="Type query here">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Type your name here" minlength="3">
+            <br>
+            <label for="email-address">Email address</label>
+            <input type="text" name="email-address" placeholder="Type your email address here" minlength="3">
+            <br>
+            <label for="message">Message</label>
+            <textarea type="text" name="message" placeholder="Type your message here" minlength="10"></textarea>
+            <br>
             <input type="submit" value="Submit">
         </form>
     </div>
