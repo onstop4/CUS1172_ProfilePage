@@ -6,7 +6,7 @@ body {
 
 h1 {
     margin-top: 0;
-    background: url("top-heading.jpg") no-repeat center;
+    background: url("../images/top-heading.jpg") no-repeat center;
     padding: 10px 0;
     border-bottom: 2px;
     height: 50px;
