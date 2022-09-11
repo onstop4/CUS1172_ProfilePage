@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    margin-top: 0;
+    background: url("top-heading.jpg") no-repeat center;
+    padding: 10px 0;
+    border-bottom: 2px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div {
+    border-bottom: 1px solid gray;
+    padding: 8px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+table {
+    border: 2px;
+}
+
+th {
+    background-color: rgb(166, 166, 166);
+    font-weight: 600;
+}
+
+th,
+td {
+    padding: 2px 6px;
+    border: 1px;
+}
+
+#menu-table {
+    border-collapse: collapse;
+}
+
+#menu-table tr {
+    border-bottom: 1px solid black;
+}
+
+#menu-table tr:nth-last-child(1) {
+    border-bottom: 0;
+}
+
+form {
+    border: 4px solid black;
+    background-color: lightgray;
+}
+
+.input-field {
+    margin: 4px;
+    border: 0;
+    display: flex;
+}
+
+label {
+    flex: .2;
+}
+
+label+* {
+    flex: 1;
+}
+
+input[type="submit"] {
+    border: 1px solid black;
+    border-radius: 20px;
+    flex: 1;
+    align-self: center;
+    margin: 0 40%;
+    height: 40px;
+}
+
+ul {
+    padding-left: 2%;
+    list-style: none;
+}
+
+ul li::before {
+    margin: 4px;
+    content: "\2192";
+}
+
+li ul li::before {
+    content: "\21d2";
+}
+
+.wrap-float {
+    display: flow-root;
+}

@@ -3,25 +3,35 @@
 
 <head>
     <title>About Me</title>
+
+    <!-- Fonts from Google. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Dancing+Script:wght@500&family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- My actual work. -->
+    <link href="mycss_web.css" rel="stylesheet">
+    <style>
+        h2 {
+            text-decoration: underline;
+            font-family: 'Cabin', sans-serif;
+            font-weight: normal;
+        }
+    </style>
 </head>
 
 <body>
+
     <h1>About Me</h1>
-    <div>
+
+    <div class="wrap-float">
+        <img style="float: left; padding-right: 8px;" width="200" height="200" src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg">
         <p>Hello! I'm Andrew Henkel, a undergrad majoring in computer science at St. John's University. I'm interested in backend web development using frameworks and technologies associated with Python and Java.</p>
-        <p>Here is my profile picture:</p>
-        <img width="200" height="200" src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg">
-        <p>
-            <em>
-                Taken from the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">Mozilla Developer Network</a>,
-                where it's distributed under the <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 license</a>.
-            </em>
-        </p>
     </div>
 
     <div>
-        <h2><a id="menu">Menu</a></h2>
-        <table>
+        <h2><a id="menu" href="#menu">Menu</a></h2>
+        <table id="menu-table">
             <tr>
                 <th>Sections of Profile</th>
             </tr>
@@ -55,17 +65,20 @@
             <tr>
                 <td><a href="#contact-form">Contact Form</a></td>
             </tr>
+            <tr>
+                <td><a href="#attribution">Attribution</a></td>
+            </tr>
         </table>
     </div>
 
     <div>
-        <h2><a id="my-education">My Education</a></h2>
+        <h2><a id="my-education" href="#my-education">My Education</a></h2>
         <p>I am currently working to obtain a bachelor's degree in computer science. Before college, I attended Holy
             Cross High School in Flushing, New York.</p>
     </div>
 
     <div>
-        <h2><a id="work-experience-and-personal-projects">Work Experience and Personal Projects</a></h2>
+        <h2><a id="work-experience-and-personal-projects" href="#work-experience-and-personal-projects">Work Experience and Personal Projects</a></h2>
         <ul>
             <li>Bookmark manager (built using Vue.js and Django)</li>
             <li>Library attendance system for my high school (built using Django)</li>
@@ -74,7 +87,7 @@
     </div>
 
     <div>
-        <h2><a id="programming-skills">Programming Skills</a></h2>
+        <h2><a id="programming-skills" href="#programming-skills">Programming Skills</a></h2>
         <p>Here is my knowledge of various programming languages and the frameworks associated with them:</p>
         <ul>
             <li>
@@ -101,26 +114,25 @@
     </div>
 
     <div>
-        <h2><a id="general-interests">General Interests</a></h2>
+        <h2><a id="general-interests" href="#general-interests">General Interests</a></h2>
         <p>I'm interested in programming and Linux. In my free time, I'm either listening to music, troubleshooting my
             own mistakes, or reading fantasy books or webcomics.</p>
     </div>
 
     <div>
-        <h2><a id="favorite-media">Favorite Media</a></h2>
-        <p><strong>Favorite Song</strong>: Toss up between <a target="_blank" href="https://youtu.be/tofr5iyM9dM">Zeitlos</a> by
+        <h2><a id="favorite-media" href="#favorite-media">Favorite Media</a></h2>
+        <p><span>Favorite Song</span>: Toss up between <a target="_blank" href="https://youtu.be/tofr5iyM9dM">Zeitlos</a> by
             Isolated and <a target="_blank" href="https://youtu.be/kBNh9rtJJ6c">Nevergreen</a> by Emancipator.</p>
 
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tofr5iyM9dM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kBNh9rtJJ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe style="padding-left: 20px;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/kBNh9rtJJ6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <p><strong>Favorite Movie</strong>: <a target="_blank" href="https://youtu.be/mqqft2x_Aa4">The Batman</a></p>
+        <p><span>Favorite Movie</span>: <a target="_blank" href="https://youtu.be/mqqft2x_Aa4">The Batman</a></p>
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mqqft2x_Aa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div>
-        <h2><a id="favorite-websites">Favorite Websites</a></h2>
+        <h2><a id="favorite-websites" href="#favorite-websites">Favorite Websites</a></h2>
         <ul>
             <li>
                 <a target="_blank" href="https://realpython.com/">Real Python</a> - A large collection of Python
@@ -142,7 +154,7 @@
     </div>
 
     <div>
-        <h2><a id="my-projects-in-this-course">My Projects in This Course</a></h2>
+        <h2><a id="my-projects-in-this-course" href="#my-projects-in-this-course">My Projects in This Course</a></h2>
         <table>
             <tr>
                 <th>Project</th>
@@ -169,26 +181,48 @@
     </div>
 
     <div>
-        <h2><a id="photo-i-took">Photo I Took</a></h2>
+        <h2><a id="photo-i-took" href="#photo-i-took">Photo I Took</a></h2>
         <p>Here is a photo I took of the Manhattan skyline while I was on the Staten Island ferry:</p>
         <img src="skyline.jpg" width="35%" height="35%">
     </div>
 
-    <div>
-        <h2><a id="contact-form">Contact Form</a></h2>
+    <div style="border: 0">
+        <h2><a id="contact-form" href="#contact-form">Contact Form</a></h2>
         <p>You can contact me using the form below. Your message must be at least ten characters.</p>
         <form>
-            <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Type your name here" minlength="3">
-            <br>
-            <label for="email-address">Email address</label>
-            <input type="text" name="email-address" placeholder="Type your email address here" minlength="3">
-            <br>
-            <label for="message">Message</label>
-            <textarea type="text" name="message" placeholder="Type your message here" minlength="10"></textarea>
-            <br>
-            <input type="submit" value="Submit">
+            <div class="input-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Type your name here" minlength="3">
+            </div>
+            <div class="input-field">
+                <label for="email-address">Email address</label>
+                <input type="text" name="email-address" placeholder="Type your email address here" minlength="3">
+            </div>
+            <div class="input-field">
+                <label for="message">Message</label>
+                <textarea type="text" name="message" placeholder="Type your message here" minlength="10"></textarea>
+            </div>
+            <div class="input-field">
+                <input type="submit" value="Submit">
+            </div>
         </form>
+    </div>
+
+    <div>
+        <h2><a id="attribution" href="#attribution">Attribution</a></h2>
+        <p>Here are the sources that I got my images from:</p>
+        <ul>
+            <li>Profile picture taken was from the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">Mozilla Developer Network</a>,
+                where it's distributed under the <a target="_blank" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 license</a>.</li>
+            <li>Background image at the top of the page was taken Alexander Debiève on <a href="https://unsplash.com/photos/FO7JIlwjOtU">Unsplash</a>,
+                where it's distributed under the <a href="https://unsplash.com/license">Unsplash license</a>.</li>
+        </ul>
+        <p>I also used several Google Fonts on my page, all of which are distributed under the <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">Open Font License</a>:</p>
+        <ul>
+            <li><a href="https://fonts.google.com/specimen/Cabin">Cabin</a> by Impallari Type and Rodrigo Fuenzalida.</li>
+            <li><a href="https://fonts.google.com/specimen/Dancing+Script">Dancing Script</a> by Impallari Type.</li>
+            <li><a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a> by Google.</li>
+        </ul>
     </div>
 
 </body>
