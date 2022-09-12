@@ -14,3 +14,7 @@ form {
 input[type="submit"] {
     display: none;
 }
+
+.go-to-top-button {
+    display: none;
+}

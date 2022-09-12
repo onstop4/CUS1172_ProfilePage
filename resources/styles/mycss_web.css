@@ -131,3 +131,22 @@ img.center {
     display: block;
     margin: 0 auto 0 auto;
 }
+
+#go-to-top-button {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+#go-to-top-button-inside {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #30c2ee;
+    font-size: 40px;
+    line-height: 80px;
+    color: white;
+    text-align: center;
+}
