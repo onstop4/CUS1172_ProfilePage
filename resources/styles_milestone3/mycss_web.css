@@ -2,8 +2,11 @@
     background: linear-gradient(90deg, #000000, #0000001f), url("../images/top-heading.jpg") no-repeat center;
 }
 
-h2 a {
+a {
     color: inherit;
+}
+
+h2 a {
     text-decoration: none;
 }
 
