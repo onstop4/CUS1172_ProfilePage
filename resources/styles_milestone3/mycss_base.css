@@ -42,3 +42,7 @@ a:hover {
 .custom-list li ul li::before {
     content: "\21d2";
 }
+
+.form-control {
+    text-align: center;
+}
