@@ -1,3 +1,8 @@
 #navbar-top {
     background: linear-gradient(90deg, #000000, #0000001f), url("../images/top-heading.jpg") no-repeat center;
 }
+
+#profile-picture {
+    float: left;
+    margin-right: 1rem;
+}
