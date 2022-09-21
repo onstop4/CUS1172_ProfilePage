@@ -1,3 +1,14 @@
+.row,
+.col {
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #navbar-top {
     background: linear-gradient(90deg, #000000, #0000001f), url("../images/top-heading.jpg") no-repeat center;
 }
