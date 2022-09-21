@@ -1,0 +1,44 @@
+.row,
+.col {
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #4b4bd1;
+}
+
+.heading-anchor {
+    display: block;
+    position: relative;
+    top: -25px;
+    visibility: hidden;
+}
+
+.left-while-center {
+    display: inline-block;
+    text-align: left;
+}
+
+.custom-list,
+.custom-list li ul {
+    list-style: none;
+}
+
+.custom-list li::before {
+    margin: 4px;
+    content: "⚙️";
+}
+
+.custom-list li ul li::before {
+    content: "\21d2";
+}
